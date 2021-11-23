@@ -1,0 +1,36 @@
+form {
+	width: 35vw;
+	background: $color-card;
+	padding: 2vw;
+	border-radius: 1rem;
+	margin: 10vh 0 0 0;
+	box-shadow: $shadow;
+	h2 {
+		color: $color-letra;
+		font-weight: 600;
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+	input {
+		padding: 0.5vw;
+		margin: 0.5vw;
+		width: 30vw;
+	}
+	textarea {
+		padding: 0.5vw;
+		margin: 0.5vw;
+		width: 30vw;
+		min-height: 5vh;
+		max-height: 10vh;
+	}
+	#boton {
+		background: $color-letra;
+		&:hover {
+			background: $color-nav;
+		}
+	}
+}
+.containerC {
+	display: flex;
+	justify-content: center;
+}

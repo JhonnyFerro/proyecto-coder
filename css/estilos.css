@@ -1,0 +1,243 @@
+.bg-secondary {
+  background: #dddf00 !important;
+}
+
+.text-primary {
+  color: #67923d !important;
+}
+
+.btn {
+  background: #67923d;
+  border: #67923d;
+  color: #dddf00;
+}
+
+.btn:hover {
+  background: #aacc00;
+}
+
+@media only screen and (min-width: 350px) and (max-width: 720px) {
+  .homeCard {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .homeCard .homeCard1 img,
+  .homeCard .homeCard2 img,
+  .homeCard .homeCard3 img {
+    width: 8rem;
+    margin-top: 5vh;
+  }
+  .homeCard .homeCard1 p,
+  .homeCard .homeCard2 p,
+  .homeCard .homeCard3 p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  .fc {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cardres {
+    width: auto !important;
+  }
+}
+
+form {
+  width: 35vw;
+  background: #aacc00;
+  padding: 2vw;
+  border-radius: 1rem;
+  margin: 10vh 0 0 0;
+  -webkit-box-shadow: 1vh 1vh 1vh rgba(0, 0, 0, 0.4);
+          box-shadow: 1vh 1vh 1vh rgba(0, 0, 0, 0.4);
+}
+
+form h2 {
+  color: #67923d;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+form input {
+  padding: 0.5vw;
+  margin: 0.5vw;
+  width: 30vw;
+}
+
+form textarea {
+  padding: 0.5vw;
+  margin: 0.5vw;
+  width: 30vw;
+  min-height: 5vh;
+  max-height: 10vh;
+}
+
+form #boton {
+  background: #67923d;
+}
+
+form #boton:hover {
+  background: #dddf00;
+}
+
+.containerC {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer {
+  position: absolute;
+  bottom: 0px;
+}
+
+.bg-past {
+  background-image: url(../imagenes/textura-de-cesped-gratis.jpg);
+}
+
+.imgSize {
+  width: 15vw;
+}
+
+.carousel-inner {
+  border: solid #dddf00;
+  -webkit-box-shadow: 1vh 1vh 1vh rgba(0, 0, 0, 0.4);
+          box-shadow: 1vh 1vh 1vh rgba(0, 0, 0, 0.4);
+  border-radius: 2rem;
+}
+
+/* Inicia Servicios home */
+.homeCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 999;
+}
+
+.homeCard .homeCard1,
+.homeCard .homeCard2,
+.homeCard .homeCard3 {
+  background: #aacc00;
+  margin: 1rem 1rem 2rem 1rem;
+  height: 41vh;
+  text-align: center;
+  border-radius: 2rem;
+  -webkit-box-shadow: 1vh 1vh 1vh rgba(0, 0, 0, 0.4);
+          box-shadow: 1vh 1vh 1vh rgba(0, 0, 0, 0.4);
+}
+
+.homeCard a {
+  text-decoration: none;
+}
+
+.homeCard1 img {
+  width: 15rem;
+  margin-top: 5vh;
+}
+
+.homeCard1 p {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  padding: 1rem 2rem 0rem 2rem;
+  font-weight: 800;
+  color: #67923d;
+}
+
+.homeCard1:hover {
+  background: #67923d;
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.homeCard2 img {
+  width: 15rem;
+  margin-top: 5vh;
+}
+
+.homeCard2 p {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  padding: 1rem 2rem 0rem 2rem;
+  font-weight: 800;
+  color: #67923d;
+}
+
+.homeCard2:hover {
+  background: #67923d;
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.homeCard3 img {
+  width: 15rem;
+  margin-top: 5vh;
+}
+
+.homeCard3 p {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  padding: 1rem 2rem 0rem 2rem;
+  font-weight: 800;
+  color: #67923d;
+}
+
+.homeCard3:hover {
+  background: #67923d;
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+/* Termina Servicios home */
+body {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 8rem;
+}
+
+.cardNos {
+  margin-bottom: 10rem;
+  -webkit-box-shadow: 1vh 1vh 1vh rgba(0, 0, 0, 0.4);
+          box-shadow: 1vh 1vh 1vh rgba(0, 0, 0, 0.4);
+}
+
+.card {
+  -webkit-box-shadow: 1vh 1vh 1vh rgba(0, 0, 0, 0.4);
+          box-shadow: 1vh 1vh 1vh rgba(0, 0, 0, 0.4);
+}
+
+.dropdown-item:hover {
+  background-color: rgba(103, 146, 61, 0.3);
+}
+
+.nav-item:hover {
+  background: rgba(103, 146, 61, 0.3);
+  border-radius: 1rem;
+}
+
+.fcc {
+  margin-bottom: 8rem;
+}
+
+h1 {
+  color: #dddf00;
+}
