@@ -44,10 +44,18 @@
   .cardres {
     width: auto !important;
   }
+  form {
+    width: 20rem;
+  }
+  form input {
+    width: 10rem;
+  }
+  form textarea {
+    width: 10rem;
+  }
 }
 
 form {
-  width: 35vw;
   background: #aacc00;
   padding: 2vw;
   border-radius: 1rem;
@@ -66,15 +74,30 @@ form h2 {
 form input {
   padding: 0.5vw;
   margin: 0.5vw;
-  width: 30vw;
+  width: 30rem;
+  display: block;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #67923d;
+}
+
+form input:focus {
+  outline: none;
 }
 
 form textarea {
   padding: 0.5vw;
   margin: 0.5vw;
-  width: 30vw;
+  width: 30rem;
   min-height: 5vh;
   max-height: 10vh;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #67923d;
+}
+
+form textarea:focus {
+  outline: none;
 }
 
 form #boton {
