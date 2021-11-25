@@ -1,35 +1,142 @@
-form {
-	width: 35vw;
-	background: $color-card;
-	padding: 2vw;
-	border-radius: 1rem;
-	margin: 10vh 0 0 0;
+.container {
+	max-width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1.5em;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+.contact-wrapper {
 	box-shadow: $shadow;
-	h2 {
-		color: $color-letra;
-		font-weight: 600;
+}
+
+.contact-form {
+	background: $color-nav;
+	border-top-left-radius: 1rem;
+	border-bottom-left-radius: 1rem;
+}
+
+.contact-form form {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form label {
+	display: block;
+	color: $color-letra;
+}
+
+.contact-form form p {
+	margin: 0;
+	padding: 1em;
+	color: $color-letra;
+}
+
+.contact-form form .block {
+	grid-column: 1 / 3;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+	width: 100%;
+	padding: 0.7em;
+	border: none;
+	background: none;
+	outline: 0;
+	color: $color-letra;
+	font-weight: 400;
+	border-bottom: 1px solid $color-letra;
+}
+
+.contact-form form button {
+	background: $color-letra;
+	color: $color-nav;
+	border: 0;
+	text-transform: uppercase;
+	padding: 1em;
+	border-radius: 1rem;
+	width: 100%;
+	font-weight: 800;
+	padding: 0.7em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+	background: $color-card;
+	color: $color-letra;
+	transition: background-color 1s ease-out;
+	outline: 0;
+}
+
+/* CONTACT INFO */
+.contact-info {
+	background: $color-card;
+	border-top-right-radius: 1rem;
+	border-bottom-right-radius: 1rem;
+}
+
+.contact-info {
+	p {
 		text-align: center;
-		margin-bottom: 1rem;
+		margin: 0 0 1rem 0;
+		color: $color-letra;
+		font-weight: 400;
 	}
-	input {
-		padding: 0.5vw;
-		margin: 0.5vw;
-		width: 30vw;
+	h4 {
+		text-align: center;
+		margin: 0 0 1rem 0;
+		color: $color-letra;
+		font-weight: 700;
 	}
-	textarea {
-		padding: 0.5vw;
-		margin: 0.5vw;
-		width: 30vw;
-		min-height: 5vh;
-		max-height: 10vh;
-	}
-	#boton {
-		background: $color-letra;
-		&:hover {
-			background: $color-nav;
-		}
+	ul {
+		text-align: center;
+		margin: 0 0 1rem 0;
+		color: $color-letra;
+		font-weight: 500;
 	}
 }
+
+/* Medidas grandes */
+@media (min-width: 700px) {
+	form {
+		padding: 0 4em;
+	}
+	.contact-wrapper {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		margin: 1rem 15rem 10rem 15rem;
+	}
+	.contact-wrapper > * {
+		padding: 2em;
+	}
+}
+/* Medidas Chicas */
+@media only screen and (min-width: 350px) and (max-width: 720px) {
+	.contact-info {
+		border-bottom-left-radius: 1rem;
+		border-bottom-right-radius: 1rem;
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+		margin-bottom: 3rem;
+		height: 20rem;
+	}
+	.contact-form {
+		border-top-left-radius: 1rem;
+		border-top-right-radius: 1rem;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+	.contact-wrapper {
+		margin: 0 1rem 9rem 1rem;
+	}
+	.contact-info h4 {
+		padding-top: 2rem;
+	}
+}
+
 .containerC {
 	display: flex;
 	justify-content: center;
