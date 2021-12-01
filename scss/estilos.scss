@@ -3,18 +3,25 @@
 @import "_contacto";
 @import "_footer";
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 .bg-past {
 	background-image: url(../imagenes/textura-de-cesped-gratis.jpg);
 }
 .imgSize {
-	width: 15vw;
+	width: 12rem;
 }
+
+/* Inicia  home */
+
 .carousel-inner {
 	border: solid $color-nav;
 	box-shadow: $shadow;
 	border-radius: 2rem;
 }
-/* Inicia Servicios home */
 
 .homeCard {
 	display: flex;
@@ -24,7 +31,7 @@
 	.homeCard2,
 	.homeCard3 {
 		background: $color-card;
-		margin: 1rem 1rem 2rem 1rem;
+		margin: 1rem 2rem 2rem 2rem;
 		height: 41vh;
 		text-align: center;
 		border-radius: 2rem;
@@ -36,13 +43,14 @@
 }
 
 .homeCard1 {
+	width: 25rem;
 	img {
 		width: 15rem;
 		margin-top: 5vh;
 	}
 	p {
 		font-family: "Yanone Kaffeesatz", sans-serif;
-		font-size: 1.5rem;
+		font-size: 2rem;
 		margin-top: 1rem;
 		padding: 1rem 2rem 0rem 2rem;
 		font-weight: 800;
@@ -55,13 +63,14 @@
 	}
 }
 .homeCard2 {
+	width: 25rem;
 	img {
 		width: 15rem;
 		margin-top: 5vh;
 	}
 	p {
 		font-family: "Yanone Kaffeesatz", sans-serif;
-		font-size: 1.5rem;
+		font-size: 2rem;
 		margin-top: 1rem;
 		padding: 1rem 2rem 0rem 2rem;
 		font-weight: 800;
@@ -74,13 +83,14 @@
 	}
 }
 .homeCard3 {
+	width: 25rem;
 	img {
 		width: 15rem;
 		margin-top: 5vh;
 	}
 	p {
 		font-family: "Yanone Kaffeesatz", sans-serif;
-		font-size: 1.5rem;
+		font-size: 2rem;
 		margin-top: 1rem;
 		padding: 1rem 2rem 0rem 2rem;
 		font-weight: 800;
@@ -94,14 +104,16 @@
 }
 /* Termina Servicios home */
 
+/* Empieza Bodys*/
 body {
 	position: relative;
 	min-height: 100vh;
-	padding-bottom: 8rem;
+	padding-bottom: 16rem;
 }
+/* Termina Bodys */
 
 .cardNos {
-	margin-bottom: 10rem;
+	margin-bottom: 3rem;
 	box-shadow: $shadow;
 }
 
@@ -114,9 +126,6 @@ body {
 .nav-item:hover {
 	background: rgba(103, 146, 61, 0.3);
 	border-radius: 1rem;
-}
-.fcc {
-	margin-bottom: 8rem;
 }
 h1 {
 	color: $color-nav;

@@ -9,6 +9,11 @@ $shadow: 1vh 1vh 1vh rgba(0, 0, 0, 0.4);
 .text-primary {
 	color: $color-letra !important;
 }
+.active {
+	background-color: $color-letra !important;
+	color: $color-nav !important;
+	border-radius: 1rem !important;
+}
 .btn {
 	background: $color-letra;
 	border: $color-letra;
