@@ -3,14 +3,22 @@
 @import "_contacto";
 @import "_footer";
 
+// Cambios Generales //
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
+
+h1 {
+	color: $color-nav;
+}
+
+// background //
 .bg-past {
 	background-image: url(../imagenes/textura-de-cesped-gratis.jpg);
 }
+
 .imgSize {
 	width: 12rem;
 }
@@ -112,6 +120,7 @@ body {
 }
 /* Termina Bodys */
 
+// Cards //
 .cardNos {
 	margin-bottom: 3rem;
 	box-shadow: $shadow;
@@ -120,6 +129,8 @@ body {
 .card {
 	box-shadow: $shadow;
 }
+
+// Navmenu //
 .dropdown-item:hover {
 	background-color: rgba(103, 146, 61, 0.3);
 }
@@ -127,13 +138,15 @@ body {
 	background: rgba(103, 146, 61, 0.3);
 	border-radius: 1rem;
 }
-h1 {
-	color: $color-nav;
-}
 
 .cardres {
 	transition: transform 0.5s;
 	&:hover {
 		transform: scale(1.2);
 	}
+}
+
+// Margin especial //
+.m-bottom {
+	margin-bottom: 4rem;
 }

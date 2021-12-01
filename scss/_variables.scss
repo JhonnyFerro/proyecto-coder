@@ -3,17 +3,21 @@ $color-card: #aacc00;
 $color-letra: #67923d;
 $shadow: 1vh 1vh 1vh rgba(0, 0, 0, 0.4);
 
+// Colores Principales//
 .bg-secondary {
 	background: $color-nav !important;
 }
 .text-primary {
 	color: $color-letra !important;
 }
+// Active //
 .active {
 	background-color: $color-letra !important;
 	color: $color-nav !important;
 	border-radius: 1rem !important;
 }
+
+// boton //
 .btn {
 	background: $color-letra;
 	border: $color-letra;

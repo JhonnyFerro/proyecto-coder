@@ -241,6 +241,10 @@ footer h4 {
           box-sizing: border-box;
 }
 
+h1 {
+  color: #dddf00;
+}
+
 .bg-past {
   background-image: url(../imagenes/textura-de-cesped-gratis.jpg);
 }
@@ -390,10 +394,6 @@ body {
   border-radius: 1rem;
 }
 
-h1 {
-  color: #dddf00;
-}
-
 .cardres {
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
@@ -404,4 +404,8 @@ h1 {
 .cardres:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+.m-bottom {
+  margin-bottom: 4rem;
 }
