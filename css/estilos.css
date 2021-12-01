@@ -6,6 +6,12 @@
   color: #67923d !important;
 }
 
+.active {
+  background-color: #67923d !important;
+  color: #dddf00 !important;
+  border-radius: 1rem !important;
+}
+
 .btn {
   background: #67923d;
   border: #67923d;
@@ -22,6 +28,14 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .homeCard .homeCard1,
+  .homeCard .homeCard2,
+  .homeCard .homeCard3 {
+    width: 18rem;
   }
   .homeCard .homeCard1 img,
   .homeCard .homeCard2 img,
@@ -32,7 +46,7 @@
   .homeCard .homeCard1 p,
   .homeCard .homeCard2 p,
   .homeCard .homeCard3 p {
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-top: 0.5rem;
   }
   .fc {
@@ -43,6 +57,9 @@
   }
   .cardres {
     width: auto !important;
+  }
+  body {
+    padding-bottom: 24rem !important;
   }
 }
 
@@ -188,7 +205,7 @@ ul {
     border-bottom-right-radius: 0;
   }
   .contact-wrapper {
-    margin: 0 1rem 9rem 1rem;
+    margin: 0 1rem 8rem 1rem;
   }
   .contact-info h4 {
     padding-top: 2rem;
@@ -209,14 +226,30 @@ footer {
   bottom: 0px;
 }
 
+footer p {
+  color: #67923d;
+}
+
+footer h4 {
+  color: #67923d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .bg-past {
   background-image: url(../imagenes/textura-de-cesped-gratis.jpg);
 }
 
 .imgSize {
-  width: 15vw;
+  width: 12rem;
 }
 
+/* Inicia  home */
 .carousel-inner {
   border: solid #dddf00;
   -webkit-box-shadow: 1vh 1vh 1vh rgba(0, 0, 0, 0.4);
@@ -224,7 +257,6 @@ footer {
   border-radius: 2rem;
 }
 
-/* Inicia Servicios home */
 .homeCard {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -239,7 +271,7 @@ footer {
 .homeCard .homeCard2,
 .homeCard .homeCard3 {
   background: #aacc00;
-  margin: 1rem 1rem 2rem 1rem;
+  margin: 1rem 2rem 2rem 2rem;
   height: 41vh;
   text-align: center;
   border-radius: 2rem;
@@ -251,6 +283,10 @@ footer {
   text-decoration: none;
 }
 
+.homeCard1 {
+  width: 25rem;
+}
+
 .homeCard1 img {
   width: 15rem;
   margin-top: 5vh;
@@ -258,7 +294,7 @@ footer {
 
 .homeCard1 p {
   font-family: "Yanone Kaffeesatz", sans-serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-top: 1rem;
   padding: 1rem 2rem 0rem 2rem;
   font-weight: 800;
@@ -273,6 +309,10 @@ footer {
   transition: all 0.4s;
 }
 
+.homeCard2 {
+  width: 25rem;
+}
+
 .homeCard2 img {
   width: 15rem;
   margin-top: 5vh;
@@ -280,7 +320,7 @@ footer {
 
 .homeCard2 p {
   font-family: "Yanone Kaffeesatz", sans-serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-top: 1rem;
   padding: 1rem 2rem 0rem 2rem;
   font-weight: 800;
@@ -295,6 +335,10 @@ footer {
   transition: all 0.4s;
 }
 
+.homeCard3 {
+  width: 25rem;
+}
+
 .homeCard3 img {
   width: 15rem;
   margin-top: 5vh;
@@ -302,7 +346,7 @@ footer {
 
 .homeCard3 p {
   font-family: "Yanone Kaffeesatz", sans-serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-top: 1rem;
   padding: 1rem 2rem 0rem 2rem;
   font-weight: 800;
@@ -318,14 +362,16 @@ footer {
 }
 
 /* Termina Servicios home */
+/* Empieza Bodys*/
 body {
   position: relative;
   min-height: 100vh;
-  padding-bottom: 8rem;
+  padding-bottom: 16rem;
 }
 
+/* Termina Bodys */
 .cardNos {
-  margin-bottom: 10rem;
+  margin-bottom: 3rem;
   -webkit-box-shadow: 1vh 1vh 1vh rgba(0, 0, 0, 0.4);
           box-shadow: 1vh 1vh 1vh rgba(0, 0, 0, 0.4);
 }
@@ -342,10 +388,6 @@ body {
 .nav-item:hover {
   background: rgba(103, 146, 61, 0.3);
   border-radius: 1rem;
-}
-
-.fcc {
-  margin-bottom: 8rem;
 }
 
 h1 {

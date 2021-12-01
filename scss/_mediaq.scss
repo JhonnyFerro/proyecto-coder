@@ -1,15 +1,17 @@
 @media only screen and (min-width: 350px) and (max-width: 720px) {
 	.homeCard {
 		flex-direction: column;
+		align-items: center;
 		.homeCard1,
 		.homeCard2,
 		.homeCard3 {
+			width: 18rem;
 			img {
 				width: 8rem;
 				margin-top: 5vh;
 			}
 			p {
-				font-size: 1rem;
+				font-size: 1.5rem;
 				margin-top: 0.5rem;
 			}
 		}
@@ -20,5 +22,7 @@
 	.cardres {
 		width: auto !important;
 	}
-	
+	body {
+		padding-bottom: 24rem !important;
+	}
 }
