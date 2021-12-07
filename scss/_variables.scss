@@ -10,11 +10,19 @@ $shadow: 1vh 1vh 1vh rgba(0, 0, 0, 0.4);
 .text-primary {
 	color: $color-letra !important;
 }
-// Active //
+// Menu //
 .active {
 	background-color: $color-letra !important;
 	color: $color-nav !important;
 	border-radius: 1rem !important;
+}
+.navbar-nav {
+	.nav-link {
+		text-align: center;
+	}
+}
+.dropdown-item {
+	text-align: center;
 }
 
 // boton //

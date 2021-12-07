@@ -12,6 +12,14 @@
   border-radius: 1rem !important;
 }
 
+.navbar-nav .nav-link {
+  text-align: center;
+}
+
+.dropdown-item {
+  text-align: center;
+}
+
 .btn {
   background: #67923d;
   border: #67923d;
@@ -96,6 +104,7 @@ ul {
 .contact-form form label {
   display: block;
   color: #67923d;
+  font-weight: bolder;
 }
 
 .contact-form form p {
@@ -404,6 +413,20 @@ body {
 .cardres:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+.borde {
+  border-radius: 1rem;
+}
+
+.borde-img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.borde-contact {
+  border-start-start-radius: 1rem !important;
+  border-start-end-radius: 1rem !important;
 }
 
 .m-bottom {

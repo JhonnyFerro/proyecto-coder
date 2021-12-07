@@ -139,14 +139,21 @@ body {
 	border-radius: 1rem;
 }
 
+// tarjetas servicios //
 .cardres {
 	transition: transform 0.5s;
 	&:hover {
 		transform: scale(1.2);
 	}
 }
-
-// Margin especial //
+.borde {
+	border-radius: 1rem;
+}
+.borde-img {
+	border-top-left-radius: 1rem;
+	border-top-right-radius: 1rem;
+}
+// Margin bottom genral//
 .m-bottom {
 	margin-bottom: 4rem;
 }
