@@ -28,47 +28,7 @@
 
 .btn:hover {
   background: #aacc00;
-}
-
-@media only screen and (min-width: 350px) and (max-width: 720px) {
-  .homeCard {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .homeCard .homeCard1,
-  .homeCard .homeCard2,
-  .homeCard .homeCard3 {
-    width: 18rem;
-  }
-  .homeCard .homeCard1 img,
-  .homeCard .homeCard2 img,
-  .homeCard .homeCard3 img {
-    width: 8rem;
-    margin-top: 5vh;
-  }
-  .homeCard .homeCard1 p,
-  .homeCard .homeCard2 p,
-  .homeCard .homeCard3 p {
-    font-size: 1.5rem;
-    margin-top: 0.5rem;
-  }
-  .fc {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .cardres {
-    width: auto !important;
-  }
-  body {
-    padding-bottom: 24rem !important;
-  }
+  color: #67923d;
 }
 
 .container {
@@ -285,7 +245,7 @@ h1 {
 .homeCard .homeCard3 {
   background: #aacc00;
   margin: 1rem 2rem 2rem 2rem;
-  height: 41vh;
+  padding-bottom: 1rem;
   text-align: center;
   border-radius: 2rem;
   -webkit-box-shadow: 1vh 1vh 1vh rgba(0, 0, 0, 0.4);
@@ -404,6 +364,7 @@ body {
 }
 
 .cardres {
+  width: 30rem;
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
@@ -411,8 +372,8 @@ body {
 }
 
 .cardres:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .borde {
@@ -424,11 +385,59 @@ body {
   border-top-right-radius: 1rem;
 }
 
-.borde-contact {
-  border-start-start-radius: 1rem !important;
-  border-start-end-radius: 1rem !important;
-}
-
 .m-bottom {
   margin-bottom: 4rem;
+}
+
+@media only screen and (min-width: 350px) and (max-width: 1024px) {
+  .homeCard {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .homeCard .homeCard1,
+  .homeCard .homeCard2,
+  .homeCard .homeCard3 {
+    width: 18rem;
+    height: 20rem;
+  }
+  .homeCard .homeCard1 img,
+  .homeCard .homeCard2 img,
+  .homeCard .homeCard3 img {
+    width: 8rem;
+    margin-top: 5vh;
+  }
+  .homeCard .homeCard1 p,
+  .homeCard .homeCard2 p,
+  .homeCard .homeCard3 p {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  .fc {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cardres {
+    width: auto;
+  }
+  body {
+    padding-bottom: 24rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1281px) {
+  .homeCard .homeCard1,
+  .homeCard .homeCard2,
+  .homeCard .homeCard3 {
+    margin: 1rem 0.5rem 2rem 0.5rem;
+  }
 }

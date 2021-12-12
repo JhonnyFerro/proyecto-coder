@@ -1,5 +1,4 @@
 @import "_variables";
-@import "_mediaq";
 @import "_contacto";
 @import "_footer";
 
@@ -40,7 +39,7 @@ h1 {
 	.homeCard3 {
 		background: $color-card;
 		margin: 1rem 2rem 2rem 2rem;
-		height: 41vh;
+		padding-bottom: 1rem;
 		text-align: center;
 		border-radius: 2rem;
 		box-shadow: $shadow;
@@ -120,7 +119,7 @@ body {
 }
 /* Termina Bodys */
 
-// Cards //
+// Card Nosotros //
 .cardNos {
 	margin-bottom: 3rem;
 	box-shadow: $shadow;
@@ -141,9 +140,10 @@ body {
 
 // tarjetas servicios //
 .cardres {
+	width: 30rem;
 	transition: transform 0.5s;
 	&:hover {
-		transform: scale(1.2);
+		transform: scale(1.1);
 	}
 }
 .borde {
@@ -156,4 +156,43 @@ body {
 // Margin bottom genral//
 .m-bottom {
 	margin-bottom: 4rem;
+}
+@media only screen and (min-width: 350px) and (max-width: 1024px) {
+	.homeCard {
+		flex-direction: column;
+		align-items: center;
+		.homeCard1,
+		.homeCard2,
+		.homeCard3 {
+			width: 18rem;
+			height: 20rem;
+			img {
+				width: 8rem;
+				margin-top: 5vh;
+			}
+			p {
+				font-size: 1.5rem;
+				margin-top: 0.5rem;
+			}
+		}
+	}
+	.fc {
+		flex-direction: column;
+		align-items: center;
+	}
+	.cardres {
+		width: auto;
+	}
+	body {
+		padding-bottom: 24rem;
+	}
+}
+@media only screen and (min-width: 1024px) and (max-width: 1281px) {
+	.homeCard {
+		.homeCard1,
+		.homeCard2,
+		.homeCard3 {
+			margin: 1rem 0.5rem 2rem 0.5rem;
+		}
+	}
 }
